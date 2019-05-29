@@ -52,20 +52,20 @@ export AWS_SECRET_ACCESS_KEY="asecretkey"
 The output should look like this :
 
 ```shell
-    --- SNIP ---
-    * provider.aws: version = "~> 2.11"
-    Terraform has been successfully initialized!
-    --- SNIP ---
+--- SNIP ---
+* provider.aws: version = "~> 2.11"
+Terraform has been successfully initialized!
+--- SNIP ---
 ```
     
 - Now, Terraform has downloded the AWS provider for you automatically.
 - To preview what is going to happen without actually performing any actions, execute `terraform plan`. The output should look like this :
 
 ```shell
-   Terraform will perform the following actions:
-    + module.server.aws_instance.web
-        id:                                <computed>
-        ami:                               "ami-0444fa3496fb4fab2"
+Terraform will perform the following actions:
++ module.server.aws_instance.web
+    id:                                <computed>
+    ami:                               "ami-0444fa3496fb4fab2"
 ```
 This output says that the actions of creating the recources are going to be performed by the `server` module.
 
@@ -81,6 +81,6 @@ public_ip = 3.87.187.208
 
 - Now you should have a running instance in AWS.
 
-- In order to destroy whatever resources have been created by Terraform, execute `terraform destroy`. 
+- In order to destroy whatever resources have been created by Terraform, execute `terraform destroy`.
 
 
