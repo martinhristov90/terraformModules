@@ -66,6 +66,7 @@ Terraform will perform the following actions:
 + module.server.aws_instance.web
     id:                                <computed>
     ami:                               "ami-0444fa3496fb4fab2"
+--- SNIP ---
 ```
 This output says that the actions of creating the recources are going to be performed by the `server` module.
 
